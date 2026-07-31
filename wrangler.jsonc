@@ -20,7 +20,7 @@
       "binding": "D1",
       "database_id": "1e3d6d6f-9d51-4588-a48b-233b5b98a2bf",
       "database_name": "lentz-pyld0-test",
-      "remote": true,
+      "remote": false,
     },
   ],
   "services": [

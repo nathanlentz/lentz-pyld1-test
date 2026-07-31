@@ -48,6 +48,8 @@ Images will be served from an R2 bucket which you can then further configure to 
 
 The Worker will have direct access to a D1 SQLite database which Wrangler can connect locally to, just note that you won't have a connection string as you would typically with other providers.
 
+By default, `remote` is set to `false` for the D1 binding in `wrangler.jsonc`. This means local development (`pnpm dev`) and local CLI commands connect to a local emulated D1 database, not your live remote database. To have local development connect directly to the remote D1 database instead, set `remote: true` on the D1 binding in `wrangler.jsonc`.
+
 You can enable read replicas by adding `readReplicas: 'first-primary'` in the DB adapter and then enabling it on your D1 Cloudflare dashboard. Read more about this feature on [our docs](https://payloadcms.com/docs/database/sqlite#d1-read-replicas).
 
 ## Working with Cloudflare
