@@ -16,5 +16,12 @@ export const Media: CollectionConfig = {
     // These are not supported on Workers yet due to lack of sharp
     crop: false,
     focalPoint: false,
+    imageSizes: [
+      {
+        name: 'thumbnail',
+        width: 300,
+        height: 300,
+      },
+    ],
   },
 }
